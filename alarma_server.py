@@ -47,7 +47,6 @@ def date_to_milis(date_string):
 
 app = flask.Flask(__name__)
 
-
 @app.route("/alarma/email/hmGbxMUUW2EVA1tqG2otEQ6zGq995kDk", methods=["GET"])
 def alarma():
      mensaje = request.args.get("mensaje")
@@ -94,4 +93,4 @@ def alarma():
 
      return "Ok"
    
-app.run(host="0.0.0.0", port=8000)
+app.run(host="0.0.0.0", port=12345)
